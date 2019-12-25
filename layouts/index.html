@@ -2,11 +2,13 @@
   <h1>Home</h1>
   <ul>
     {{ range (where .Pages "Section" "projects") }}
-    <li>
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
-      </a>
-    </li>
+      {{ range (where .Pages "Section" "projects") }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </li>
+      {{ end }}
     {{ end }}
   </ul>
 
