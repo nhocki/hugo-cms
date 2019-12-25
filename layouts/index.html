@@ -1,15 +1,10 @@
 {{ define "main" }}
-  <h1>Home</h1>
-  <ul>
+  <div class="projects">
     {{ range (where .Pages "Section" "projects") }}
       {{ range (where .Pages "Section" "projects") }}
-      <li>
-        <a href="{{ .Permalink }}">
-          {{ .Title }}
-        </a>
-      </li>
+      {{ partial "project_box.html" . }}
       {{ end }}
     {{ end }}
-  </ul>
+  </div>
 
 {{ end }}

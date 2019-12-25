@@ -5,19 +5,68 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Box-sizing border-box */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
 #wrapper {
   max-width: 94%;
   margin: 0 auto;
   display: flex;
+  padding: 70px 0;
+}
+
+#logo img {
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 #sidebar {
-  max-width: 15%;
-  border-right: 1px solid black;
+  width: 20%;
   min-height: 100vh;
+}
+
+#main {
+  max-width: 80%;
+  width: 80%;
+}
+
+.projects {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+  grid-gap: 20px;
+}
+
+.project-box {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-box > a {
+  display: block;
+  width: 100%;
+  min-height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-box .overlay {
+  background:rgba(240, 240, 240, 0.8);
+  border: 1px solid #BBB;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.project-box .overlay:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.project-box:hover .overlay {
+  display: block;
 }
