@@ -8,8 +8,8 @@ slug:
   sanitize_replacement: "-"
 collections:
   - name: "projects"
-    label: "Proyectos"
-    label_singular: "Proyecto"
+    label: "projects"
+    label_singular: "project"
     folder: "content/projects"
     create: true
     delete: true
