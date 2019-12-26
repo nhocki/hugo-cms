@@ -22,6 +22,10 @@ body {
   vertical-align: bottom;
 }
 
+.content {
+  text-align: center;
+}
+
 #sidebar {
   width: 20%;
   min-height: calc(100vh - 70px);
