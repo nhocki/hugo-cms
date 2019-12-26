@@ -9,7 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
   max-width: 94%;
   margin: 0 auto;
   display: flex;
-  padding: 70px 0;
+  padding: 70px 0 0;
 }
 
 #logo img {
@@ -19,7 +19,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 #sidebar {
   width: 20%;
-  min-height: 100vh;
+  min-height: calc(100vh - 70px);
 }
 
 #main {
