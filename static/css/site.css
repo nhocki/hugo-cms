@@ -20,6 +20,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 #sidebar {
   width: 20%;
   min-height: calc(100vh - 70px);
+  text-align: center;
 }
 
 #main {
